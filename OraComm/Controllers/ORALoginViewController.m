@@ -22,22 +22,13 @@
 #pragma mark - Action Handling
 - (IBAction)didPressLogin:(UIBarButtonItem *)sender
 {
+    NSLog(@"Attempting to Login with Credentials");
     
-}
-
-- (IBAction)didPressRegister:(UIBarButtonItem *)sender
-{
-    NSLog(@"Navigating to Register View");
-    [self.navigationController performSegueWithIdentifier:@"ShowRegister" sender:self];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
+    //Perform Navigation to Main
+    [self performSegueWithIdentifier:@"CompleteLoginShowMain" sender:self];
 }
 
 #pragma mark - Navigation
-
 - (IBAction)prepareForUnwind:(UIStoryboardSegue *)segue
 {
     
@@ -45,8 +36,13 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+}
+
+#pragma mark - Utility
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 @end

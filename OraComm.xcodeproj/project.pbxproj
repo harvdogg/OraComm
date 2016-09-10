@@ -18,8 +18,6 @@
 		C67B135D1D847DCB000B5B1E /* ORAConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B135C1D847DCB000B5B1E /* ORAConversation.m */; };
 		C67B13601D84826A000B5B1E /* ORALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B135F1D84826A000B5B1E /* ORALoginViewController.m */; };
 		C67B13631D84827C000B5B1E /* ORARegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13621D84827C000B5B1E /* ORARegisterViewController.m */; };
-		C67B13661D8482B5000B5B1E /* ORAConversationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13651D8482B5000B5B1E /* ORAConversationsTableViewController.m */; };
-		C67B13691D8482D9000B5B1E /* ORAMessagesCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13681D8482D9000B5B1E /* ORAMessagesCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,10 +52,6 @@
 		C67B135F1D84826A000B5B1E /* ORALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORALoginViewController.m; path = Controllers/ORALoginViewController.m; sourceTree = "<group>"; };
 		C67B13611D84827C000B5B1E /* ORARegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORARegisterViewController.h; path = Controllers/ORARegisterViewController.h; sourceTree = "<group>"; };
 		C67B13621D84827C000B5B1E /* ORARegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORARegisterViewController.m; path = Controllers/ORARegisterViewController.m; sourceTree = "<group>"; };
-		C67B13641D8482B5000B5B1E /* ORAConversationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAConversationsTableViewController.h; path = Controllers/ORAConversationsTableViewController.h; sourceTree = "<group>"; };
-		C67B13651D8482B5000B5B1E /* ORAConversationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAConversationsTableViewController.m; path = Controllers/ORAConversationsTableViewController.m; sourceTree = "<group>"; };
-		C67B13671D8482D9000B5B1E /* ORAMessagesCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAMessagesCollectionViewController.h; path = Controllers/ORAMessagesCollectionViewController.h; sourceTree = "<group>"; };
-		C67B13681D8482D9000B5B1E /* ORAMessagesCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAMessagesCollectionViewController.m; path = Controllers/ORAMessagesCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,10 +131,6 @@
 				C67B135F1D84826A000B5B1E /* ORALoginViewController.m */,
 				C67B13611D84827C000B5B1E /* ORARegisterViewController.h */,
 				C67B13621D84827C000B5B1E /* ORARegisterViewController.m */,
-				C67B13641D8482B5000B5B1E /* ORAConversationsTableViewController.h */,
-				C67B13651D8482B5000B5B1E /* ORAConversationsTableViewController.m */,
-				C67B13671D8482D9000B5B1E /* ORAMessagesCollectionViewController.h */,
-				C67B13681D8482D9000B5B1E /* ORAMessagesCollectionViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -270,10 +260,8 @@
 				C67B135D1D847DCB000B5B1E /* ORAConversation.m in Sources */,
 				C67B13631D84827C000B5B1E /* ORARegisterViewController.m in Sources */,
 				C67B13601D84826A000B5B1E /* ORALoginViewController.m in Sources */,
-				C67B13691D8482D9000B5B1E /* ORAMessagesCollectionViewController.m in Sources */,
 				C67B135A1D847DB7000B5B1E /* ORAUser.m in Sources */,
 				C67B132B1D847B2A000B5B1E /* main.m in Sources */,
-				C67B13661D8482B5000B5B1E /* ORAConversationsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
