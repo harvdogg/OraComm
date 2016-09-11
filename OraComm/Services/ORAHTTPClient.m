@@ -49,4 +49,26 @@ static ORAHTTPClient *defaultClient;
     _sessionManager.responseSerializer = [AFJSONResponseSerializer serializer];
 
 }
+
+- (void)setAccessToken:(NSString *)accessToken
+{
+    //Retain Access Token Value for Reference
+    _accessToken = accessToken.copy;
+    
+    //Obtain Existing Header Configuration
+    NSMutableDictionary *headers = (self.sessionManager && self.sessionManager.session.configuration.HTTPAdditionalHeaders ? self.sessionManager.session.configuration.HTTPAdditionalHeaders.mutableCopy : [NSMutableDictionary new]);
+    
+    //Add or Remove Authorization Header
+    if(!accessToken || accessToken.length == 0)
+    {
+        if([headers.allKeys containsObject:@"Authorization"])
+            [headers removeObjectForKey:@"Authorization"];
+    }
+    else
+        [headers setObject:[NSString stringWithFormat:@"Bearer %@", accessToken] forKey:@"Authorization"];
+    
+    //Reinitialize Session
+    [self initializeSessionManagerWithURL:self.sessionManager.baseURL headers:headers];
+    
+}
 @end

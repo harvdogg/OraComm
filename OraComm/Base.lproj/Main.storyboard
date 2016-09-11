@@ -18,22 +18,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2o3-Ou-Oh9">
-                                <rect key="frame" x="123" y="110" width="427" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-rh-wn9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="nJo-rh-wn9">
                                 <rect key="frame" x="123" y="156" width="427" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="An3-q5-q8R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MhB-0A-Tsy" id="iea-WL-jM5"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ih1-Ln-1f2">
                                 <rect key="frame" x="30" y="114" width="85" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="eZ4-p5-1wX"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -42,7 +43,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="UzO-TH-kui"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -63,6 +64,17 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2o3-Ou-Oh9">
+                                <rect key="frame" x="123" y="110" width="427" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3cv-Ue-ekb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="MhB-0A-Tsy" id="Eh5-IT-Ldj"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -82,6 +94,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTF" destination="2o3-Ou-Oh9" id="abH-PM-QGD"/>
+                        <outlet property="passwordTF" destination="nJo-rh-wn9" id="mQc-e4-BLP"/>
                         <segue destination="B0C-UW-DzA" kind="show" identifier="CompleteLoginShowMain" id="yYW-kD-0FE"/>
                     </connections>
                 </viewController>
@@ -138,15 +152,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3b-qt-QPg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a3b-qt-QPg">
                                 <rect key="frame" x="135" y="89" width="427" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mp5-NR-ior" id="Z6r-E2-ddq"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgd-vQ-7eM">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bgd-vQ-7eM">
                                 <rect key="frame" x="135" y="135" width="427" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mp5-NR-ior" id="9Cs-a8-urX"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGe-ap-sZh">
                                 <rect key="frame" x="39" y="93" width="45" height="21"/>
@@ -166,15 +186,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utO-N4-PD4">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="utO-N4-PD4">
                                 <rect key="frame" x="135" y="183" width="427" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mp5-NR-ior" id="r37-Rn-aWw"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srx-qV-aA2">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Srx-qV-aA2">
                                 <rect key="frame" x="135" y="229" width="427" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mp5-NR-ior" id="g9n-Pb-WDn"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MVb-NV-zjM">
                                 <rect key="frame" x="42" y="187" width="74" height="21"/>
@@ -238,6 +264,12 @@
                     <navigationItem key="navigationItem" title="My Account" id="CHX-ZB-f9J">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="NqW-X8-w4C"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="confirmTF" destination="Srx-qV-aA2" id="KO4-EG-bhj"/>
+                        <outlet property="emailTF" destination="bgd-vQ-7eM" id="9Wa-hd-QVG"/>
+                        <outlet property="nameTF" destination="a3b-qt-QPg" id="XVH-oX-vr4"/>
+                        <outlet property="passwordTF" destination="utO-N4-PD4" id="jWd-Ht-WeO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xC-Z7-0Ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -255,22 +287,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZlN-ec-tM2">
-                                <rect key="frame" x="135" y="97" width="427" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35m-PD-sjZ">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35m-PD-sjZ">
                                 <rect key="frame" x="135" y="143" width="427" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9uC-BU-C2C" id="gAF-QU-cAj"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="176-rz-WP5">
-                                <rect key="frame" x="39" y="101" width="45" height="21"/>
+                                <rect key="frame" x="39" y="101" width="77" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="45" id="NiY-xg-29a"/>
+                                    <constraint firstAttribute="width" constant="77" id="NiY-xg-29a"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -279,26 +309,32 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="NqD-Qb-jSW"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihk-SO-f4R">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ihk-SO-f4R">
                                 <rect key="frame" x="135" y="191" width="427" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9uC-BU-C2C" id="qf5-lv-N1I"/>
+                                </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxD-AP-qVa">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxD-AP-qVa">
                                 <rect key="frame" x="135" y="237" width="427" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9uC-BU-C2C" id="nwD-Dg-gu6"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="as7-cL-Mfr">
-                                <rect key="frame" x="42" y="195" width="74" height="21"/>
+                                <rect key="frame" x="42" y="195" width="85" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="74" id="5Bl-kP-zLL"/>
+                                    <constraint firstAttribute="width" constant="85" id="5Bl-kP-zLL"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -307,7 +343,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="85" id="SQ7-Vl-gag"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -328,6 +364,14 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZlN-ec-tM2">
+                                <rect key="frame" x="135" y="97" width="427" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="yes" spellCheckingType="yes" keyboardType="alphabet" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9uC-BU-C2C" id="VaN-mD-TFx"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -337,7 +381,7 @@
                             <constraint firstItem="Ihk-SO-f4R" firstAttribute="top" secondItem="35m-PD-sjZ" secondAttribute="bottom" constant="18" id="B85-NQ-8eH"/>
                             <constraint firstItem="CBV-rO-7VJ" firstAttribute="leading" secondItem="yCj-pA-2zX" secondAttribute="leadingMargin" constant="22" id="EWH-XB-GjW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cxD-AP-qVa" secondAttribute="trailing" constant="18" id="J4l-ME-rkf"/>
-                            <constraint firstItem="ZlN-ec-tM2" firstAttribute="leading" secondItem="176-rz-WP5" secondAttribute="trailing" constant="51" id="JH0-IO-Qza"/>
+                            <constraint firstItem="ZlN-ec-tM2" firstAttribute="leading" secondItem="176-rz-WP5" secondAttribute="trailing" constant="19" id="JH0-IO-Qza"/>
                             <constraint firstItem="ZlN-ec-tM2" firstAttribute="top" secondItem="Zgy-Pw-cZF" secondAttribute="bottom" constant="77" id="OYe-I0-wfW"/>
                             <constraint firstItem="176-rz-WP5" firstAttribute="leading" secondItem="yCj-pA-2zX" secondAttribute="leadingMargin" constant="19" id="Q09-2o-XJU"/>
                             <constraint firstItem="176-rz-WP5" firstAttribute="top" secondItem="Zgy-Pw-cZF" secondAttribute="bottom" constant="81" id="QcK-Pi-Fpu"/>
@@ -346,7 +390,7 @@
                             <constraint firstItem="h3d-Zd-EZR" firstAttribute="leading" secondItem="yCj-pA-2zX" secondAttribute="leadingMargin" constant="22" id="U2R-Gh-OUt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ihk-SO-f4R" secondAttribute="trailing" constant="18" id="U5U-IS-y9o"/>
                             <constraint firstItem="35m-PD-sjZ" firstAttribute="leading" secondItem="CBV-rO-7VJ" secondAttribute="trailing" constant="8" id="V1H-Qz-YRH"/>
-                            <constraint firstItem="Ihk-SO-f4R" firstAttribute="leading" secondItem="as7-cL-Mfr" secondAttribute="trailing" constant="19" id="aM1-dg-mXv"/>
+                            <constraint firstItem="Ihk-SO-f4R" firstAttribute="leading" secondItem="as7-cL-Mfr" secondAttribute="trailing" constant="8" id="aM1-dg-mXv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="35m-PD-sjZ" secondAttribute="trailing" constant="18" id="be3-yV-9Sl"/>
                             <constraint firstItem="Aaz-Wf-hgi" firstAttribute="leading" secondItem="yCj-pA-2zX" secondAttribute="leadingMargin" constant="-20" id="bh2-Vh-Are"/>
                             <constraint firstItem="as7-cL-Mfr" firstAttribute="leading" secondItem="yCj-pA-2zX" secondAttribute="leadingMargin" constant="22" id="eEX-el-bwn"/>
@@ -358,6 +402,10 @@
                     </view>
                     <toolbarItems/>
                     <connections>
+                        <outlet property="confirmTF" destination="cxD-AP-qVa" id="Pow-Lt-Kfp"/>
+                        <outlet property="emailTF" destination="35m-PD-sjZ" id="vjH-xL-FAI"/>
+                        <outlet property="nameTF" destination="ZlN-ec-tM2" id="CMf-LN-Y6Y"/>
+                        <outlet property="passwordTF" destination="Ihk-SO-f4R" id="8cW-dt-4aQ"/>
                         <segue destination="B0C-UW-DzA" kind="show" identifier="CompleteRegisterShowMain" id="2ch-vg-PPy"/>
                     </connections>
                 </viewController>
