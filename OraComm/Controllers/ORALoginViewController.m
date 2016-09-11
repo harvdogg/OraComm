@@ -7,6 +7,7 @@
 //
 
 #import "ORALoginViewController.h"
+#import "ORAHTTPClient.h"
 
 @interface ORALoginViewController ()
 

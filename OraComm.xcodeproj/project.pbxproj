@@ -1,1257 +1,572 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>09369E9FF2A76C7EDBE0CE08</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-OraComm.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-OraComm/Pods-OraComm.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3CEF3F76071D1F98CADD8A6B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5A3C04693ED4FDC0E51B60B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>5A3C04693ED4FDC0E51B60B6</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-OraComm.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>5D743A6AA945B4F71FE3B8C0</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>09369E9FF2A76C7EDBE0CE08</string>
-				<string>BCCAF3A4C32370B15C8DA480</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>67123CD402502BB3EE0C11E5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5A3C04693ED4FDC0E51B60B6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>974BF57A323B7C3A0D210460</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-OraComm/Pods-OraComm-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B450EC26F235ABBDA6350955</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-OraComm/Pods-OraComm-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>BCCAF3A4C32370B15C8DA480</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-OraComm.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-OraComm/Pods-OraComm.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B131D1D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B13281D847B2A000B5B1E</string>
-				<string>C67B13421D847B2A000B5B1E</string>
-				<string>C67B13271D847B2A000B5B1E</string>
-				<string>5D743A6AA945B4F71FE3B8C0</string>
-				<string>67123CD402502BB3EE0C11E5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B131E1D847B2A000B5B1E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Ora Interactive</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>C67B13251D847B2A000B5B1E</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-					</dict>
-					<key>C67B133E1D847B2A000B5B1E</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>C67B13251D847B2A000B5B1E</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>C67B13211D847B2A000B5B1E</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>C67B131D1D847B2A000B5B1E</string>
-			<key>productRefGroup</key>
-			<string>C67B13271D847B2A000B5B1E</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>C67B13251D847B2A000B5B1E</string>
-				<string>C67B133E1D847B2A000B5B1E</string>
-			</array>
-		</dict>
-		<key>C67B13211D847B2A000B5B1E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C67B13461D847B2A000B5B1E</string>
-				<string>C67B13471D847B2A000B5B1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C67B13221D847B2A000B5B1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C67B13571D847DA1000B5B1E</string>
-				<string>C67B132E1D847B2A000B5B1E</string>
-				<string>C67B135D1D847DCB000B5B1E</string>
-				<string>C67B136C1D84ABB5000B5B1E</string>
-				<string>C67B13631D84827C000B5B1E</string>
-				<string>C67B13601D84826A000B5B1E</string>
-				<string>C67B135A1D847DB7000B5B1E</string>
-				<string>C67B132B1D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C67B13231D847B2A000B5B1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3CEF3F76071D1F98CADD8A6B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C67B13241D847B2A000B5B1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C67B136F1D84AC4A000B5B1E</string>
-				<string>C67B13391D847B2A000B5B1E</string>
-				<string>C67B13361D847B2A000B5B1E</string>
-				<string>C67B13341D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C67B13251D847B2A000B5B1E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C67B13481D847B2A000B5B1E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>E5D0E9E86EB40C6C005786B9</string>
-				<string>C67B13221D847B2A000B5B1E</string>
-				<string>C67B13231D847B2A000B5B1E</string>
-				<string>C67B13241D847B2A000B5B1E</string>
-				<string>B450EC26F235ABBDA6350955</string>
-				<string>974BF57A323B7C3A0D210460</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OraComm</string>
-			<key>productName</key>
-			<string>OraComm</string>
-			<key>productReference</key>
-			<string>C67B13261D847B2A000B5B1E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>C67B13261D847B2A000B5B1E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OraComm.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C67B13271D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B13261D847B2A000B5B1E</string>
-				<string>C67B133F1D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13281D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B134E1D847C74000B5B1E</string>
-				<string>C67B13511D847C92000B5B1E</string>
-				<string>C67B134F1D847C80000B5B1E</string>
-				<string>C67B132C1D847B2A000B5B1E</string>
-				<string>C67B132D1D847B2A000B5B1E</string>
-				<string>C67B13321D847B2A000B5B1E</string>
-				<string>C67B13351D847B2A000B5B1E</string>
-				<string>C67B13371D847B2A000B5B1E</string>
-				<string>C67B133A1D847B2A000B5B1E</string>
-				<string>C67B13291D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OraComm</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13291D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B136D1D84AC3F000B5B1E</string>
-				<string>C67B132A1D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B132A1D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B132B1D847B2A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B132A1D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B132C1D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B132D1D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B132E1D847B2A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B132D1D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B13321D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B13331D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13331D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13341D847B2A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13321D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B13351D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13361D847B2A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13351D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B13371D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B13381D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13381D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13391D847B2A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13371D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B133A1D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B133B1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>C67B13441D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C67B133C1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C67B133D1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>C67B133E1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C67B134B1D847B2A000B5B1E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>C67B133B1D847B2A000B5B1E</string>
-				<string>C67B133C1D847B2A000B5B1E</string>
-				<string>C67B133D1D847B2A000B5B1E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>C67B13411D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>OraCommTests</string>
-			<key>productName</key>
-			<string>OraCommTests</string>
-			<key>productReference</key>
-			<string>C67B133F1D847B2A000B5B1E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>C67B133F1D847B2A000B5B1E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>OraCommTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>C67B13401D847B2A000B5B1E</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>C67B131E1D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>C67B13251D847B2A000B5B1E</string>
-			<key>remoteInfo</key>
-			<string>OraComm</string>
-		</dict>
-		<key>C67B13411D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>C67B13251D847B2A000B5B1E</string>
-			<key>targetProxy</key>
-			<string>C67B13401D847B2A000B5B1E</string>
-		</dict>
-		<key>C67B13421D847B2A000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B13431D847B2A000B5B1E</string>
-				<string>C67B13451D847B2A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>OraCommTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13431D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>OraCommTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13441D847B2A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13431D847B2A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B13451D847B2A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13461D847B2A000B5B1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C67B13471D847B2A000B5B1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C67B13481D847B2A000B5B1E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C67B13491D847B2A000B5B1E</string>
-				<string>C67B134A1D847B2A000B5B1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C67B13491D847B2A000B5B1E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>09369E9FF2A76C7EDBE0CE08</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OraComm/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.orainteractive.OraComm</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C67B134A1D847B2A000B5B1E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>BCCAF3A4C32370B15C8DA480</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OraComm/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.orainteractive.OraComm</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C67B134B1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>C67B134C1D847B2A000B5B1E</string>
-				<string>C67B134D1D847B2A000B5B1E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>C67B134C1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OraCommTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.orainteractive.OraCommTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/OraComm.app/OraComm</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>C67B134D1D847B2A000B5B1E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>OraCommTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.orainteractive.OraCommTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/OraComm.app/OraComm</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>C67B134E1D847C74000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B135E1D84826A000B5B1E</string>
-				<string>C67B135F1D84826A000B5B1E</string>
-				<string>C67B13611D84827C000B5B1E</string>
-				<string>C67B13621D84827C000B5B1E</string>
-				<string>C67B136A1D84ABB5000B5B1E</string>
-				<string>C67B136B1D84ABB5000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B134F1D847C80000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B135B1D847DCB000B5B1E</string>
-				<string>C67B135C1D847DCB000B5B1E</string>
-				<string>C67B13551D847DA1000B5B1E</string>
-				<string>C67B13561D847DA1000B5B1E</string>
-				<string>C67B13581D847DB7000B5B1E</string>
-				<string>C67B13591D847DB7000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Model</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13511D847C92000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Services</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13551D847DA1000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ORAMessage.h</string>
-			<key>path</key>
-			<string>Model/ORAMessage.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13561D847DA1000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ORAMessage.m</string>
-			<key>path</key>
-			<string>Model/ORAMessage.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13571D847DA1000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13561D847DA1000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B13581D847DB7000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ORAUser.h</string>
-			<key>path</key>
-			<string>Model/ORAUser.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13591D847DB7000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ORAUser.m</string>
-			<key>path</key>
-			<string>Model/ORAUser.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B135A1D847DB7000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13591D847DB7000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B135B1D847DCB000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ORAConversation.h</string>
-			<key>path</key>
-			<string>Model/ORAConversation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B135C1D847DCB000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ORAConversation.m</string>
-			<key>path</key>
-			<string>Model/ORAConversation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B135D1D847DCB000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B135C1D847DCB000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B135E1D84826A000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ORALoginViewController.h</string>
-			<key>path</key>
-			<string>Controllers/ORALoginViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B135F1D84826A000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ORALoginViewController.m</string>
-			<key>path</key>
-			<string>Controllers/ORALoginViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13601D84826A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B135F1D84826A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B13611D84827C000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ORARegisterViewController.h</string>
-			<key>path</key>
-			<string>Controllers/ORARegisterViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13621D84827C000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ORARegisterViewController.m</string>
-			<key>path</key>
-			<string>Controllers/ORARegisterViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B13631D84827C000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B13621D84827C000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B136A1D84ABB5000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ORAAccountViewController.h</string>
-			<key>path</key>
-			<string>Controllers/ORAAccountViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B136B1D84ABB5000B5B1E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ORAAccountViewController.m</string>
-			<key>path</key>
-			<string>Controllers/ORAAccountViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B136C1D84ABB5000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B136B1D84ABB5000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C67B136D1D84AC3F000B5B1E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C67B136E1D84AC4A000B5B1E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Images</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B136E1D84AC4A000B5B1E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>name</key>
-			<string>Splash.png</string>
-			<key>path</key>
-			<string>Images/Splash.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C67B136F1D84AC4A000B5B1E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C67B136E1D84AC4A000B5B1E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E5D0E9E86EB40C6C005786B9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>C67B131E1D847B2A000B5B1E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3CEF3F76071D1F98CADD8A6B /* libPods-OraComm.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3C04693ED4FDC0E51B60B6 /* libPods-OraComm.a */; };
+		C67B132B1D847B2A000B5B1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B132A1D847B2A000B5B1E /* main.m */; };
+		C67B132E1D847B2A000B5B1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B132D1D847B2A000B5B1E /* AppDelegate.m */; };
+		C67B13341D847B2A000B5B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67B13321D847B2A000B5B1E /* Main.storyboard */; };
+		C67B13361D847B2A000B5B1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67B13351D847B2A000B5B1E /* Assets.xcassets */; };
+		C67B13391D847B2A000B5B1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67B13371D847B2A000B5B1E /* LaunchScreen.storyboard */; };
+		C67B13441D847B2A000B5B1E /* OraCommTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13431D847B2A000B5B1E /* OraCommTests.m */; };
+		C67B13571D847DA1000B5B1E /* ORAMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13561D847DA1000B5B1E /* ORAMessage.m */; };
+		C67B135A1D847DB7000B5B1E /* ORAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13591D847DB7000B5B1E /* ORAUser.m */; };
+		C67B135D1D847DCB000B5B1E /* ORAConversation.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B135C1D847DCB000B5B1E /* ORAConversation.m */; };
+		C67B13601D84826A000B5B1E /* ORALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B135F1D84826A000B5B1E /* ORALoginViewController.m */; };
+		C67B13631D84827C000B5B1E /* ORARegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13621D84827C000B5B1E /* ORARegisterViewController.m */; };
+		C67B136C1D84ABB5000B5B1E /* ORAAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B136B1D84ABB5000B5B1E /* ORAAccountViewController.m */; };
+		C67B136F1D84AC4A000B5B1E /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B136E1D84AC4A000B5B1E /* Splash.png */; };
+		C67B13721D84F696000B5B1E /* ORAHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13711D84F696000B5B1E /* ORAHTTPClient.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C67B13401D847B2A000B5B1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C67B131E1D847B2A000B5B1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C67B13251D847B2A000B5B1E;
+			remoteInfo = OraComm;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09369E9FF2A76C7EDBE0CE08 /* Pods-OraComm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OraComm.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OraComm/Pods-OraComm.debug.xcconfig"; sourceTree = "<group>"; };
+		5A3C04693ED4FDC0E51B60B6 /* libPods-OraComm.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OraComm.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCCAF3A4C32370B15C8DA480 /* Pods-OraComm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OraComm.release.xcconfig"; path = "Pods/Target Support Files/Pods-OraComm/Pods-OraComm.release.xcconfig"; sourceTree = "<group>"; };
+		C67B13261D847B2A000B5B1E /* OraComm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OraComm.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67B132A1D847B2A000B5B1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C67B132C1D847B2A000B5B1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C67B132D1D847B2A000B5B1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C67B13331D847B2A000B5B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C67B13351D847B2A000B5B1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C67B13381D847B2A000B5B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C67B133A1D847B2A000B5B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67B133F1D847B2A000B5B1E /* OraCommTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OraCommTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67B13431D847B2A000B5B1E /* OraCommTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OraCommTests.m; sourceTree = "<group>"; };
+		C67B13451D847B2A000B5B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67B13551D847DA1000B5B1E /* ORAMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAMessage.h; path = Model/ORAMessage.h; sourceTree = "<group>"; };
+		C67B13561D847DA1000B5B1E /* ORAMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAMessage.m; path = Model/ORAMessage.m; sourceTree = "<group>"; };
+		C67B13581D847DB7000B5B1E /* ORAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAUser.h; path = Model/ORAUser.h; sourceTree = "<group>"; };
+		C67B13591D847DB7000B5B1E /* ORAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAUser.m; path = Model/ORAUser.m; sourceTree = "<group>"; };
+		C67B135B1D847DCB000B5B1E /* ORAConversation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAConversation.h; path = Model/ORAConversation.h; sourceTree = "<group>"; };
+		C67B135C1D847DCB000B5B1E /* ORAConversation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAConversation.m; path = Model/ORAConversation.m; sourceTree = "<group>"; };
+		C67B135E1D84826A000B5B1E /* ORALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORALoginViewController.h; path = Controllers/ORALoginViewController.h; sourceTree = "<group>"; };
+		C67B135F1D84826A000B5B1E /* ORALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORALoginViewController.m; path = Controllers/ORALoginViewController.m; sourceTree = "<group>"; };
+		C67B13611D84827C000B5B1E /* ORARegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORARegisterViewController.h; path = Controllers/ORARegisterViewController.h; sourceTree = "<group>"; };
+		C67B13621D84827C000B5B1E /* ORARegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORARegisterViewController.m; path = Controllers/ORARegisterViewController.m; sourceTree = "<group>"; };
+		C67B136A1D84ABB5000B5B1E /* ORAAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAAccountViewController.h; path = Controllers/ORAAccountViewController.h; sourceTree = "<group>"; };
+		C67B136B1D84ABB5000B5B1E /* ORAAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAAccountViewController.m; path = Controllers/ORAAccountViewController.m; sourceTree = "<group>"; };
+		C67B136E1D84AC4A000B5B1E /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splash.png; path = Images/Splash.png; sourceTree = "<group>"; };
+		C67B13701D84F696000B5B1E /* ORAHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAHTTPClient.h; path = Services/ORAHTTPClient.h; sourceTree = "<group>"; };
+		C67B13711D84F696000B5B1E /* ORAHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAHTTPClient.m; path = Services/ORAHTTPClient.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C67B13231D847B2A000B5B1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CEF3F76071D1F98CADD8A6B /* libPods-OraComm.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67B133C1D847B2A000B5B1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D743A6AA945B4F71FE3B8C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09369E9FF2A76C7EDBE0CE08 /* Pods-OraComm.debug.xcconfig */,
+				BCCAF3A4C32370B15C8DA480 /* Pods-OraComm.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67123CD402502BB3EE0C11E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A3C04693ED4FDC0E51B60B6 /* libPods-OraComm.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C67B131D1D847B2A000B5B1E = {
+			isa = PBXGroup;
+			children = (
+				C67B13281D847B2A000B5B1E /* OraComm */,
+				C67B13421D847B2A000B5B1E /* OraCommTests */,
+				C67B13271D847B2A000B5B1E /* Products */,
+				5D743A6AA945B4F71FE3B8C0 /* Pods */,
+				67123CD402502BB3EE0C11E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C67B13271D847B2A000B5B1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C67B13261D847B2A000B5B1E /* OraComm.app */,
+				C67B133F1D847B2A000B5B1E /* OraCommTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C67B13281D847B2A000B5B1E /* OraComm */ = {
+			isa = PBXGroup;
+			children = (
+				C67B134E1D847C74000B5B1E /* Controllers */,
+				C67B13511D847C92000B5B1E /* Services */,
+				C67B134F1D847C80000B5B1E /* Model */,
+				C67B132C1D847B2A000B5B1E /* AppDelegate.h */,
+				C67B132D1D847B2A000B5B1E /* AppDelegate.m */,
+				C67B13321D847B2A000B5B1E /* Main.storyboard */,
+				C67B13351D847B2A000B5B1E /* Assets.xcassets */,
+				C67B13371D847B2A000B5B1E /* LaunchScreen.storyboard */,
+				C67B133A1D847B2A000B5B1E /* Info.plist */,
+				C67B13291D847B2A000B5B1E /* Supporting Files */,
+			);
+			path = OraComm;
+			sourceTree = "<group>";
+		};
+		C67B13291D847B2A000B5B1E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C67B136D1D84AC3F000B5B1E /* Images */,
+				C67B132A1D847B2A000B5B1E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C67B13421D847B2A000B5B1E /* OraCommTests */ = {
+			isa = PBXGroup;
+			children = (
+				C67B13431D847B2A000B5B1E /* OraCommTests.m */,
+				C67B13451D847B2A000B5B1E /* Info.plist */,
+			);
+			path = OraCommTests;
+			sourceTree = "<group>";
+		};
+		C67B134E1D847C74000B5B1E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67B135E1D84826A000B5B1E /* ORALoginViewController.h */,
+				C67B135F1D84826A000B5B1E /* ORALoginViewController.m */,
+				C67B13611D84827C000B5B1E /* ORARegisterViewController.h */,
+				C67B13621D84827C000B5B1E /* ORARegisterViewController.m */,
+				C67B136A1D84ABB5000B5B1E /* ORAAccountViewController.h */,
+				C67B136B1D84ABB5000B5B1E /* ORAAccountViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C67B134F1D847C80000B5B1E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C67B135B1D847DCB000B5B1E /* ORAConversation.h */,
+				C67B135C1D847DCB000B5B1E /* ORAConversation.m */,
+				C67B13551D847DA1000B5B1E /* ORAMessage.h */,
+				C67B13561D847DA1000B5B1E /* ORAMessage.m */,
+				C67B13581D847DB7000B5B1E /* ORAUser.h */,
+				C67B13591D847DB7000B5B1E /* ORAUser.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C67B13511D847C92000B5B1E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C67B13701D84F696000B5B1E /* ORAHTTPClient.h */,
+				C67B13711D84F696000B5B1E /* ORAHTTPClient.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		C67B136D1D84AC3F000B5B1E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C67B136E1D84AC4A000B5B1E /* Splash.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C67B13251D847B2A000B5B1E /* OraComm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C67B13481D847B2A000B5B1E /* Build configuration list for PBXNativeTarget "OraComm" */;
+			buildPhases = (
+				E5D0E9E86EB40C6C005786B9 /* Check Pods Manifest.lock */,
+				C67B13221D847B2A000B5B1E /* Sources */,
+				C67B13231D847B2A000B5B1E /* Frameworks */,
+				C67B13241D847B2A000B5B1E /* Resources */,
+				B450EC26F235ABBDA6350955 /* Embed Pods Frameworks */,
+				974BF57A323B7C3A0D210460 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OraComm;
+			productName = OraComm;
+			productReference = C67B13261D847B2A000B5B1E /* OraComm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C67B133E1D847B2A000B5B1E /* OraCommTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C67B134B1D847B2A000B5B1E /* Build configuration list for PBXNativeTarget "OraCommTests" */;
+			buildPhases = (
+				C67B133B1D847B2A000B5B1E /* Sources */,
+				C67B133C1D847B2A000B5B1E /* Frameworks */,
+				C67B133D1D847B2A000B5B1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C67B13411D847B2A000B5B1E /* PBXTargetDependency */,
+			);
+			name = OraCommTests;
+			productName = OraCommTests;
+			productReference = C67B133F1D847B2A000B5B1E /* OraCommTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C67B131E1D847B2A000B5B1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Ora Interactive";
+				TargetAttributes = {
+					C67B13251D847B2A000B5B1E = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					C67B133E1D847B2A000B5B1E = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = C67B13251D847B2A000B5B1E;
+					};
+				};
+			};
+			buildConfigurationList = C67B13211D847B2A000B5B1E /* Build configuration list for PBXProject "OraComm" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C67B131D1D847B2A000B5B1E;
+			productRefGroup = C67B13271D847B2A000B5B1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C67B13251D847B2A000B5B1E /* OraComm */,
+				C67B133E1D847B2A000B5B1E /* OraCommTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C67B13241D847B2A000B5B1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67B136F1D84AC4A000B5B1E /* Splash.png in Resources */,
+				C67B13391D847B2A000B5B1E /* LaunchScreen.storyboard in Resources */,
+				C67B13361D847B2A000B5B1E /* Assets.xcassets in Resources */,
+				C67B13341D847B2A000B5B1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67B133D1D847B2A000B5B1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		974BF57A323B7C3A0D210460 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OraComm/Pods-OraComm-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B450EC26F235ABBDA6350955 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OraComm/Pods-OraComm-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5D0E9E86EB40C6C005786B9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C67B13221D847B2A000B5B1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67B13571D847DA1000B5B1E /* ORAMessage.m in Sources */,
+				C67B132E1D847B2A000B5B1E /* AppDelegate.m in Sources */,
+				C67B13721D84F696000B5B1E /* ORAHTTPClient.m in Sources */,
+				C67B135D1D847DCB000B5B1E /* ORAConversation.m in Sources */,
+				C67B136C1D84ABB5000B5B1E /* ORAAccountViewController.m in Sources */,
+				C67B13631D84827C000B5B1E /* ORARegisterViewController.m in Sources */,
+				C67B13601D84826A000B5B1E /* ORALoginViewController.m in Sources */,
+				C67B135A1D847DB7000B5B1E /* ORAUser.m in Sources */,
+				C67B132B1D847B2A000B5B1E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C67B133B1D847B2A000B5B1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C67B13441D847B2A000B5B1E /* OraCommTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C67B13411D847B2A000B5B1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C67B13251D847B2A000B5B1E /* OraComm */;
+			targetProxy = C67B13401D847B2A000B5B1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C67B13321D847B2A000B5B1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C67B13331D847B2A000B5B1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C67B13371D847B2A000B5B1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C67B13381D847B2A000B5B1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C67B13461D847B2A000B5B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C67B13471D847B2A000B5B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C67B13491D847B2A000B5B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09369E9FF2A76C7EDBE0CE08 /* Pods-OraComm.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OraComm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orainteractive.OraComm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C67B134A1D847B2A000B5B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCCAF3A4C32370B15C8DA480 /* Pods-OraComm.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = OraComm/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orainteractive.OraComm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C67B134C1D847B2A000B5B1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OraCommTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orainteractive.OraCommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OraComm.app/OraComm";
+			};
+			name = Debug;
+		};
+		C67B134D1D847B2A000B5B1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OraCommTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.orainteractive.OraCommTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OraComm.app/OraComm";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C67B13211D847B2A000B5B1E /* Build configuration list for PBXProject "OraComm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67B13461D847B2A000B5B1E /* Debug */,
+				C67B13471D847B2A000B5B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C67B13481D847B2A000B5B1E /* Build configuration list for PBXNativeTarget "OraComm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67B13491D847B2A000B5B1E /* Debug */,
+				C67B134A1D847B2A000B5B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C67B134B1D847B2A000B5B1E /* Build configuration list for PBXNativeTarget "OraCommTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C67B134C1D847B2A000B5B1E /* Debug */,
+				C67B134D1D847B2A000B5B1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C67B131E1D847B2A000B5B1E /* Project object */;
+}
