@@ -61,9 +61,8 @@
         return;
     }
     
-    ORAUser *user = [[ORAUser alloc] init];
+    ORAUser *user = [[ORAUser alloc] initWithEmail:emailTF.text];
     user.name = nameTF.text;
-    user.email = emailTF.text;
     
     [user registerWithPassword:passwordTF.text confirm:confirmTF.text
                       complete:^(bool success, ORAUser *user, NSError *error)

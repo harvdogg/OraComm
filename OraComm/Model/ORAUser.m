@@ -7,7 +7,9 @@
 //
 
 #import "ORAUser.h"
+
 #import "ORAHTTPClient.h"
+#import "ORAUserManager.h"
 
 @implementation ORAUser
 
@@ -33,6 +35,64 @@ static ORAUser *currentUser;
         return;
     
     currentUser = nil;
+}
+
+#pragma mark - Initialization
+- (instancetype)initWithData:(NSDictionary *)data
+{
+    ORAUser *existingUser;
+    
+    //Attempt to Find Duplicate with ID
+    if([data.allKeys containsObject:@"id"])
+        existingUser = [[ORAUserManager sharedManager] userWithId:[data[@"id"] unsignedIntegerValue]];
+    
+    //Attempt to Find Duplicate with E-Mail
+    if(!existingUser && [data.allKeys containsObject:@"email"])
+        existingUser = [[ORAUserManager sharedManager] userWithEmail:data[@"email"]];
+    
+    //Create New
+    if(!existingUser)
+    {
+        //Obtain New Reference
+        self = [super init];
+        
+        //Register Self with Manager
+        [[ORAUserManager sharedManager] registerUser:self];
+    }
+    else
+        self = existingUser;
+    
+    if(self)
+    {
+        
+        //Parse Data
+        [self parseData:data];
+        
+    }
+    
+    return self;
+}
+
+- (instancetype)initWithEmail:(NSString *)email
+{
+    //Look for Duplicate
+    ORAUser *existingUser = [[ORAUserManager sharedManager] userWithEmail:email];
+    
+    if(!existingUser)
+    {
+        self = [super init];
+        
+        [[ORAUserManager sharedManager] registerUser:self];
+    }
+    else
+        self = existingUser;
+    
+    if(self)
+    {
+        //Retain E-Mail Value
+        _email = email;
+    }
+    return self;
 }
 
 #pragma mark - Information

@@ -22,6 +22,7 @@
 @property (nonatomic, retain, readonly) ORAConversation *conversation;
 
 //Message Methods
+- (instancetype)initWithData:(NSString *)data;
 - (instancetype)initWithMessage:(NSString *)message inConversation:(ORAConversation *)conversation;
 
 @end

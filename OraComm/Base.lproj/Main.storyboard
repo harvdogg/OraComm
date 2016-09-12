@@ -52,11 +52,13 @@
                                 <items>
                                     <navigationItem title="Login to OraChat" id="2S2-gj-PYo">
                                         <barButtonItem key="leftBarButtonItem" title="Register" id="58H-id-Ujg">
+                                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <segue destination="9uC-BU-C2C" kind="show" id="eyF-fe-3BI"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Login" id="rwR-hr-3c3">
+                                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="didPressLogin:" destination="MhB-0A-Tsy" id="KkT-Z6-8Hu"/>
                                             </connections>
@@ -106,7 +108,7 @@
         <!--Chat List-->
         <scene sceneID="zF8-ro-RRt">
             <objects>
-                <tableViewController title="Chat List" id="QkS-37-RUI" sceneMemberID="viewController">
+                <tableViewController title="Chat List" id="QkS-37-RUI" customClass="ORAChatListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="60" sectionHeaderHeight="18" sectionFooterHeight="18" id="Xu5-VF-4AF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,7 +133,11 @@
                             <outlet property="delegate" destination="QkS-37-RUI" id="0ya-uI-gFd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="OraChat" id="7jH-UU-T5P"/>
+                    <navigationItem key="navigationItem" title="OraChat" id="7jH-UU-T5P">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="compose" id="MfL-MN-Z3u">
+                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="ua9-Uh-MQZ" kind="show" identifier="ShowChatMessages" id="V7T-1d-5i9"/>
                     </connections>
@@ -224,7 +230,8 @@
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="My Account" id="2vM-Z8-omY">
-                                        <barButtonItem key="rightBarButtonItem" title="Save" id="yvq-Js-3Oe">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="yvq-Js-3Oe">
+                                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="didPressSave:" destination="mp5-NR-ior" id="xqe-g9-dHF"/>
                                             </connections>
@@ -260,7 +267,7 @@
                             <constraint firstItem="Srx-qV-aA2" firstAttribute="leading" secondItem="agy-WD-Adt" secondAttribute="trailing" constant="8" id="xL9-m5-eS6"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="aWX-Hr-aG9"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="circle-user-7.png" id="aWX-Hr-aG9"/>
                     <navigationItem key="navigationItem" title="My Account" id="CHX-ZB-f9J">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="NqW-X8-w4C"/>
                     </navigationItem>
@@ -352,11 +359,13 @@
                                 <items>
                                     <navigationItem title="Join OraChat" id="O6Q-P3-Oq1">
                                         <barButtonItem key="leftBarButtonItem" title="Login" id="OX9-qr-XS0">
+                                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <segue destination="pcb-qH-sIE" kind="unwind" unwindAction="prepareForUnwind:" id="GGf-bN-OkQ"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="Register" id="UTH-53-yXH">
+                                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="didPressRegister:" destination="9uC-BU-C2C" id="AGt-Qa-ShS"/>
                                             </connections>
@@ -480,7 +489,7 @@
         <scene sceneID="Ilf-2a-m9l">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AeW-RT-JCB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chats" id="Ibi-2p-9vC"/>
+                    <tabBarItem key="tabBarItem" title="Chats" image="list-simple-7.png" id="Ibi-2p-9vC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1td-6k-ezN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -496,6 +505,10 @@
             <point key="canvasLocation" x="3027" y="-80"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="circle-user-7.png" width="30" height="30"/>
+        <image name="list-simple-7.png" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2ch-vg-PPy"/>
     </inferredMetricsTieBreakers>

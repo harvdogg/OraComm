@@ -45,8 +45,7 @@
     }
     
     //Create User Object and Attempt Login
-    ORAUser *user = [[ORAUser alloc] init];
-    user.email = emailTF.text;
+    ORAUser *user = [[ORAUser alloc] initWithEmail:emailTF.text];
     
     [user authenticateWithPassword:passwordTF.text
                           complete:^(bool success, ORAUser *user, NSError *error)

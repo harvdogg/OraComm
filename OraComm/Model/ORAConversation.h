@@ -25,6 +25,8 @@
 
 //Conversation Methods
 - (instancetype)initWithName:(NSString *)name;
+- (instancetype)initWithData:(NSDictionary *)data;
+
 - (ORAMessage *)sendMessage:(NSString *)message;
 
 - (void)fetchLatestMessages;

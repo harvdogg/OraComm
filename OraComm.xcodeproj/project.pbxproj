@@ -22,6 +22,11 @@
 		C67B136C1D84ABB5000B5B1E /* ORAAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B136B1D84ABB5000B5B1E /* ORAAccountViewController.m */; };
 		C67B136F1D84AC4A000B5B1E /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B136E1D84AC4A000B5B1E /* Splash.png */; };
 		C67B13721D84F696000B5B1E /* ORAHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13711D84F696000B5B1E /* ORAHTTPClient.m */; };
+		C67B13751D860631000B5B1E /* ORAUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13741D860631000B5B1E /* ORAUserManager.m */; };
+		C67B13781D86064B000B5B1E /* ORAConversationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13771D86064B000B5B1E /* ORAConversationManager.m */; };
+		C67B137B1D861C0F000B5B1E /* ORAChatListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B137A1D861C0F000B5B1E /* ORAChatListTableViewController.m */; };
+		C67B137E1D8651DA000B5B1E /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B137C1D8651DA000B5B1E /* circle-user-7.png */; };
+		C67B137F1D8651DA000B5B1E /* list-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B137D1D8651DA000B5B1E /* list-simple-7.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +69,14 @@
 		C67B136E1D84AC4A000B5B1E /* Splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Splash.png; path = Images/Splash.png; sourceTree = "<group>"; };
 		C67B13701D84F696000B5B1E /* ORAHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAHTTPClient.h; path = Services/ORAHTTPClient.h; sourceTree = "<group>"; };
 		C67B13711D84F696000B5B1E /* ORAHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAHTTPClient.m; path = Services/ORAHTTPClient.m; sourceTree = "<group>"; };
+		C67B13731D860631000B5B1E /* ORAUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAUserManager.h; path = Services/ORAUserManager.h; sourceTree = "<group>"; };
+		C67B13741D860631000B5B1E /* ORAUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAUserManager.m; path = Services/ORAUserManager.m; sourceTree = "<group>"; };
+		C67B13761D86064B000B5B1E /* ORAConversationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAConversationManager.h; path = Services/ORAConversationManager.h; sourceTree = "<group>"; };
+		C67B13771D86064B000B5B1E /* ORAConversationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAConversationManager.m; path = Services/ORAConversationManager.m; sourceTree = "<group>"; };
+		C67B13791D861C0F000B5B1E /* ORAChatListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAChatListTableViewController.h; path = Controllers/ORAChatListTableViewController.h; sourceTree = "<group>"; };
+		C67B137A1D861C0F000B5B1E /* ORAChatListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAChatListTableViewController.m; path = Controllers/ORAChatListTableViewController.m; sourceTree = "<group>"; };
+		C67B137C1D8651DA000B5B1E /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-user-7.png"; path = "Images/circle-user-7.png"; sourceTree = "<group>"; };
+		C67B137D1D8651DA000B5B1E /* list-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "list-simple-7.png"; path = "Images/list-simple-7.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +179,8 @@
 				C67B13621D84827C000B5B1E /* ORARegisterViewController.m */,
 				C67B136A1D84ABB5000B5B1E /* ORAAccountViewController.h */,
 				C67B136B1D84ABB5000B5B1E /* ORAAccountViewController.m */,
+				C67B13791D861C0F000B5B1E /* ORAChatListTableViewController.h */,
+				C67B137A1D861C0F000B5B1E /* ORAChatListTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +203,10 @@
 			children = (
 				C67B13701D84F696000B5B1E /* ORAHTTPClient.h */,
 				C67B13711D84F696000B5B1E /* ORAHTTPClient.m */,
+				C67B13731D860631000B5B1E /* ORAUserManager.h */,
+				C67B13741D860631000B5B1E /* ORAUserManager.m */,
+				C67B13761D86064B000B5B1E /* ORAConversationManager.h */,
+				C67B13771D86064B000B5B1E /* ORAConversationManager.m */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -195,6 +214,8 @@
 		C67B136D1D84AC3F000B5B1E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C67B137C1D8651DA000B5B1E /* circle-user-7.png */,
+				C67B137D1D8651DA000B5B1E /* list-simple-7.png */,
 				C67B136E1D84AC4A000B5B1E /* Splash.png */,
 			);
 			name = Images;
@@ -283,6 +304,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67B137E1D8651DA000B5B1E /* circle-user-7.png in Resources */,
+				C67B137F1D8651DA000B5B1E /* list-simple-7.png in Resources */,
 				C67B136F1D84AC4A000B5B1E /* Splash.png in Resources */,
 				C67B13391D847B2A000B5B1E /* LaunchScreen.storyboard in Resources */,
 				C67B13361D847B2A000B5B1E /* Assets.xcassets in Resources */,
@@ -352,7 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67B137B1D861C0F000B5B1E /* ORAChatListTableViewController.m in Sources */,
 				C67B13571D847DA1000B5B1E /* ORAMessage.m in Sources */,
+				C67B13751D860631000B5B1E /* ORAUserManager.m in Sources */,
 				C67B132E1D847B2A000B5B1E /* AppDelegate.m in Sources */,
 				C67B13721D84F696000B5B1E /* ORAHTTPClient.m in Sources */,
 				C67B135D1D847DCB000B5B1E /* ORAConversation.m in Sources */,
@@ -361,6 +386,7 @@
 				C67B13601D84826A000B5B1E /* ORALoginViewController.m in Sources */,
 				C67B135A1D847DB7000B5B1E /* ORAUser.m in Sources */,
 				C67B132B1D847B2A000B5B1E /* main.m in Sources */,
+				C67B13781D86064B000B5B1E /* ORAConversationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

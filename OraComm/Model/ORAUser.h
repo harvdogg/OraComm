@@ -19,6 +19,9 @@ typedef void (^UserOperationComplete)(bool success, ORAUser *user, NSError *erro
 @property (nonatomic, copy) NSString *name;
 
 //User Methods
+- (instancetype)initWithData:(NSDictionary *)data;
+- (instancetype)initWithEmail:(NSString *)email;
+
 + (ORAUser *)currentUser;
 - (void)becomeCurrentUser;
 - (void)resignCurrentUser;
