@@ -11,7 +11,7 @@
 #import "ORAConversation.h"
 #import "ORAConversationManager.h"
 #import "ConversationsTableViewCell.h"
-#import "ORAChatCollectionViewController.h"
+#import "ORAChatTableViewController.h"
 
 @interface ORAChatListTableViewController () <UIAlertViewDelegate>
 {
@@ -172,9 +172,9 @@ static NSDateFormatter *df;
     {
         ConversationsTableViewCell *cell = (ConversationsTableViewCell *)sender;
         
-        if([segue.destinationViewController isKindOfClass:[ORAChatCollectionViewController class]])
+        if([segue.destinationViewController isKindOfClass:[ORAChatTableViewController class]])
         {
-            ORAChatCollectionViewController *destinationVC = (ORAChatCollectionViewController *)segue.destinationViewController;
+            ORAChatTableViewController *destinationVC = (ORAChatTableViewController *)segue.destinationViewController;
             destinationVC.conversation = cell.conversation;
         }
     }

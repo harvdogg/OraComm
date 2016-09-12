@@ -45,6 +45,7 @@ static NSDateFormatter *df;
     
     //Set Message Body Text
     messageBody.text = message.message;
+    messageSenderLabel.text = message.user.name;
     
 }
 

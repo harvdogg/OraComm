@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class ORAConversation;
+
 @interface ORAChatTableViewController : UITableViewController
+
+@property (nonatomic, retain) ORAConversation *conversation;
 
 @end

@@ -122,14 +122,21 @@ static NSDateFormatter *df;
         ORAMessage *lastMessage = [[ORAMessage alloc] initWithData:data[@"last_message"] conversation:self];
         
         if(![mMessages containsObject:lastMessage])
-            [mMessages insertObject:lastMessage atIndex:0];
+            [mMessages addObject:lastMessage];
     }
 }
 
 #pragma mark - Operational
 - (ORAMessage *)sendMessage:(NSString *)message
 {
-    return nil;
+    if(!message)
+        return nil;
+    
+    ORAMessage *newMessage = [[ORAMessage alloc] initWithMessage:message inConversation:self];
+    
+    [mMessages addObject:newMessage];
+    
+    return newMessage;
 }
 
 - (void)fetchLatestMessages
@@ -147,7 +154,7 @@ static NSDateFormatter *df;
     if(!mMessages || mMessages.count == 0)
         return nil;
     
-    return mMessages.firstObject;
+    return mMessages.lastObject;
 }
 
  - (ORAMessage *)messageWithId:(NSUInteger)messageId

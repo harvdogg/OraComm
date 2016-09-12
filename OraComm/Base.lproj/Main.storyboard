@@ -154,7 +154,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Chats" id="7jH-UU-T5P">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="compose" id="MfL-MN-Z3u">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="MfL-MN-Z3u">
                             <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didPressCreateNewButton:" destination="QkS-37-RUI" id="Tqf-Cd-w3U"/>
@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="3839" y="-80"/>
         </scene>
-        <!--Table View Controller-->
+        <!--ConversationView-->
         <scene sceneID="PKc-RL-3Wa">
             <objects>
-                <tableViewController id="ofR-SE-b5y" sceneMemberID="viewController">
+                <tableViewController title="ConversationView" id="ofR-SE-b5y" customClass="ORAChatTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" id="H3F-QW-m7g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,16 +185,36 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-N3-l7J">
-                                            <rect key="frame" x="14" y="8" width="200" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpM-N3-l7J">
+                                            <rect key="frame" x="14" y="0.0" width="200" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="200" id="Rbe-id-R8F"/>
+                                                <constraint firstAttribute="height" constant="40" id="XzP-BZ-LUX"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" red="0.29019609089999998" green="0.28627452250000002" blue="0.38431376220000002" alpha="1" colorSpace="deviceRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpS-kH-taO">
+                                            <rect key="frame" x="14" y="48" width="120" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="7HG-eu-hzW"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="wpS-kH-taO" firstAttribute="leading" secondItem="brZ-Ei-xrk" secondAttribute="leadingMargin" constant="6" id="EIs-ml-ugk"/>
+                                        <constraint firstItem="BpM-N3-l7J" firstAttribute="leading" secondItem="brZ-Ei-xrk" secondAttribute="leadingMargin" constant="6" id="giW-fZ-j7g"/>
+                                        <constraint firstItem="wpS-kH-taO" firstAttribute="top" secondItem="BpM-N3-l7J" secondAttribute="bottom" constant="8" id="kCZ-8z-rPY"/>
+                                        <constraint firstItem="BpM-N3-l7J" firstAttribute="top" secondItem="brZ-Ei-xrk" secondAttribute="topMargin" constant="-8" id="qdq-Xn-Tev"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="messageBody" destination="BpM-N3-l7J" id="x4c-HX-Ucy"/>
+                                    <outlet property="messageSenderLabel" destination="wpS-kH-taO" id="jEt-qA-iXO"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="meCell" rowHeight="70" id="d1c-Hf-rk9" customClass="ORAMessageViewCell">
@@ -204,13 +224,32 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="70"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzF-He-gtU">
-                                            <rect key="frame" x="271" y="24" width="200" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Me" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWo-rC-cZa">
+                                            <rect key="frame" x="472" y="49" width="120" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="120" id="iLb-WO-CyH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="12"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzF-He-gtU">
+                                            <rect key="frame" x="392" y="0.0" width="200" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="KZf-LL-hc2"/>
+                                                <constraint firstAttribute="width" constant="200" id="aC3-Ir-boQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                             <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ZWo-rC-cZa" secondAttribute="trailing" id="GtE-h5-A7K"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="yzF-He-gtU" secondAttribute="trailing" id="KQd-01-tsa"/>
+                                        <constraint firstItem="ZWo-rC-cZa" firstAttribute="top" secondItem="yzF-He-gtU" secondAttribute="bottom" constant="9" id="XK6-W3-By9"/>
+                                        <constraint firstItem="yzF-He-gtU" firstAttribute="top" secondItem="yQ6-M2-cEh" secondAttribute="topMargin" constant="-8" id="vkn-Wl-qEv"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="messageBody" destination="yzF-He-gtU" id="mfk-nI-RMI"/>
@@ -222,6 +261,14 @@
                             <outlet property="delegate" destination="ofR-SE-b5y" id="eaU-XU-21S"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Conversation" id="97Y-gv-Bjm">
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="nPr-N7-sZa">
+                            <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="didPressComposeButton:" destination="ofR-SE-b5y" id="0u9-bM-SkE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awu-dg-pnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
