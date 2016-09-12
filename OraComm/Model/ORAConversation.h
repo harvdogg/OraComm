@@ -17,6 +17,7 @@
 @property (nonatomic, assign, readonly) NSUInteger userId;
 @property (nonatomic, copy, readonly) NSString *name;
 @property (nonatomic, copy, readonly) NSDate *created;
+@property (nonatomic, copy, readonly) NSString *dateString;
 
 //Cross References
 @property (nonatomic, strong, readonly) ORAUser *user;

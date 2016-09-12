@@ -9,6 +9,8 @@
 #import "ORAConversation.h"
 
 #import "ORAUser.h"
+#import "ORAMessage.h"
+#import "ORAHTTPClient.h"
 #import "ORAConversationManager.h"
 
 @interface ORAConversation ()
@@ -20,6 +22,8 @@
 
 @implementation ORAConversation
 
+static NSDateFormatter *df;
+
 #pragma mark - Initialization
 - (instancetype)initWithName:(NSString *)name
 {
@@ -27,6 +31,38 @@
     if(self)
     {
         [self setup];
+        
+        _name = name;
+        _user = [ORAUser currentUser];
+        _created = [NSDate date];
+        
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"YYYY-MM-dd"];
+        
+        _dateString = [formatter stringFromDate:_created];
+        
+        [[[ORAHTTPClient defaultClient] sessionManager] POST:@"chats"
+                                                  parameters:@{@"name": name}
+                                                    progress:nil
+                                                     success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)
+                                                            {
+                                                                NSLog(@"Created Chat named %@", name);
+                                                                
+                                                                if(responseObject && [responseObject isKindOfClass:[NSDictionary class]])
+                                                                {
+                                                                    
+                                                                    NSDictionary *responseDictionary = (NSDictionary *)responseObject;
+                                                                    NSArray *properties = responseDictionary.allKeys;
+                                                                    
+                                                                    if([properties containsObject:@"data"])
+                                                                        [self parseData:responseDictionary[@"data"]];
+                                                                    
+                                                                }
+                                                            }
+                                                     failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)
+                                                            {
+                                                                NSLog(@"Failed to Create Chat Named %@: %@", name, error.localizedDescription);
+                                                            }];
     }
     return self;
 }
@@ -52,6 +88,13 @@
 
 - (void)setup
 {
+    if(!df)
+    {
+        df = [[NSDateFormatter alloc] init];
+        [df setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
+        [df setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+    }
+    
     mMessages = [NSMutableArray new];
 }
 
@@ -67,15 +110,20 @@
     
     if([properties containsObject:@"created"])
     {
-        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
-        [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
-        [formatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
-        
-        _created = [formatter dateFromString:data[@"created"]];
+        _created = [df dateFromString:data[@"created"]];
+        _dateString = [data[@"created"] substringToIndex:10];
     }
     
     if([properties containsObject:@"user"])
         _user = [[ORAUser alloc] initWithData:data[@"user"]];
+    
+    if([properties containsObject:@"last_message"])
+    {
+        ORAMessage *lastMessage = [[ORAMessage alloc] initWithData:data[@"last_message"] conversation:self];
+        
+        if(![mMessages containsObject:lastMessage])
+            [mMessages insertObject:lastMessage atIndex:0];
+    }
 }
 
 #pragma mark - Operational
@@ -94,9 +142,24 @@
     
 }
 
+- (ORAMessage *)last_message
+{
+    if(!mMessages || mMessages.count == 0)
+        return nil;
+    
+    return mMessages.firstObject;
+}
+
  - (ORAMessage *)messageWithId:(NSUInteger)messageId
 {
-    return nil;
+    NSArray <ORAMessage *> *matchingMsgs = [mMessages filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"messageId == %lu", messageId]];
+    
+    return (matchingMsgs && matchingMsgs.count > 0 ? matchingMsgs.firstObject : nil);
+}
+
+- (NSArray<ORAMessage *> *)messages
+{
+    return (mMessages ? mMessages.copy : [[NSArray alloc] init]);
 }
 
 #pragma mark - Utility

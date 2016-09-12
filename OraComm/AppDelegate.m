@@ -18,6 +18,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //Globally Set the Tab Bar Tint
+    [[UITabBar appearance] setTintColor:[UIColor orangeColor]];
+    
     //Setup Global Connection Base
     ORAHTTPClient *httpClient = [ORAHTTPClient defaultClientWithURL:[NSURL URLWithString:@"https://private-d9e5b-oracodechallenge.apiary-mock.com"] sharedHeaders:@{@"Accept": @"application/json"}];
     NSLog(@"Session Manager URL: %@", httpClient.sessionManager.baseURL);

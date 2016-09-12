@@ -27,6 +27,10 @@
 		C67B137B1D861C0F000B5B1E /* ORAChatListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B137A1D861C0F000B5B1E /* ORAChatListTableViewController.m */; };
 		C67B137E1D8651DA000B5B1E /* circle-user-7.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B137C1D8651DA000B5B1E /* circle-user-7.png */; };
 		C67B137F1D8651DA000B5B1E /* list-simple-7.png in Resources */ = {isa = PBXBuildFile; fileRef = C67B137D1D8651DA000B5B1E /* list-simple-7.png */; };
+		C67B13861D86672D000B5B1E /* ConversationsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13851D86672D000B5B1E /* ConversationsTableViewCell.m */; };
+		C67B13891D86795C000B5B1E /* ORAChatCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13881D86795C000B5B1E /* ORAChatCollectionViewController.m */; };
+		C67B138F1D867CC6000B5B1E /* ORAMessageViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B138E1D867CC6000B5B1E /* ORAMessageViewCell.m */; };
+		C67B13921D86812E000B5B1E /* ORAChatTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C67B13911D86812E000B5B1E /* ORAChatTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,14 @@
 		C67B137A1D861C0F000B5B1E /* ORAChatListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAChatListTableViewController.m; path = Controllers/ORAChatListTableViewController.m; sourceTree = "<group>"; };
 		C67B137C1D8651DA000B5B1E /* circle-user-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "circle-user-7.png"; path = "Images/circle-user-7.png"; sourceTree = "<group>"; };
 		C67B137D1D8651DA000B5B1E /* list-simple-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "list-simple-7.png"; path = "Images/list-simple-7.png"; sourceTree = "<group>"; };
+		C67B13841D86672D000B5B1E /* ConversationsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConversationsTableViewCell.h; sourceTree = "<group>"; };
+		C67B13851D86672D000B5B1E /* ConversationsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConversationsTableViewCell.m; sourceTree = "<group>"; };
+		C67B13871D86795C000B5B1E /* ORAChatCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAChatCollectionViewController.h; path = Controllers/ORAChatCollectionViewController.h; sourceTree = "<group>"; };
+		C67B13881D86795C000B5B1E /* ORAChatCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAChatCollectionViewController.m; path = Controllers/ORAChatCollectionViewController.m; sourceTree = "<group>"; };
+		C67B138D1D867CC6000B5B1E /* ORAMessageViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ORAMessageViewCell.h; sourceTree = "<group>"; };
+		C67B138E1D867CC6000B5B1E /* ORAMessageViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ORAMessageViewCell.m; sourceTree = "<group>"; };
+		C67B13901D86812E000B5B1E /* ORAChatTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ORAChatTableViewController.h; path = Controllers/ORAChatTableViewController.h; sourceTree = "<group>"; };
+		C67B13911D86812E000B5B1E /* ORAChatTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ORAChatTableViewController.m; path = Controllers/ORAChatTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +150,7 @@
 		C67B13281D847B2A000B5B1E /* OraComm */ = {
 			isa = PBXGroup;
 			children = (
+				C67B13801D8666A4000B5B1E /* Components */,
 				C67B134E1D847C74000B5B1E /* Controllers */,
 				C67B13511D847C92000B5B1E /* Services */,
 				C67B134F1D847C80000B5B1E /* Model */,
@@ -181,6 +194,10 @@
 				C67B136B1D84ABB5000B5B1E /* ORAAccountViewController.m */,
 				C67B13791D861C0F000B5B1E /* ORAChatListTableViewController.h */,
 				C67B137A1D861C0F000B5B1E /* ORAChatListTableViewController.m */,
+				C67B13871D86795C000B5B1E /* ORAChatCollectionViewController.h */,
+				C67B13881D86795C000B5B1E /* ORAChatCollectionViewController.m */,
+				C67B13901D86812E000B5B1E /* ORAChatTableViewController.h */,
+				C67B13911D86812E000B5B1E /* ORAChatTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -219,6 +236,17 @@
 				C67B136E1D84AC4A000B5B1E /* Splash.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		C67B13801D8666A4000B5B1E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C67B13841D86672D000B5B1E /* ConversationsTableViewCell.h */,
+				C67B13851D86672D000B5B1E /* ConversationsTableViewCell.m */,
+				C67B138D1D867CC6000B5B1E /* ORAMessageViewCell.h */,
+				C67B138E1D867CC6000B5B1E /* ORAMessageViewCell.m */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,14 +403,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67B13921D86812E000B5B1E /* ORAChatTableViewController.m in Sources */,
 				C67B137B1D861C0F000B5B1E /* ORAChatListTableViewController.m in Sources */,
+				C67B138F1D867CC6000B5B1E /* ORAMessageViewCell.m in Sources */,
 				C67B13571D847DA1000B5B1E /* ORAMessage.m in Sources */,
 				C67B13751D860631000B5B1E /* ORAUserManager.m in Sources */,
 				C67B132E1D847B2A000B5B1E /* AppDelegate.m in Sources */,
 				C67B13721D84F696000B5B1E /* ORAHTTPClient.m in Sources */,
+				C67B13861D86672D000B5B1E /* ConversationsTableViewCell.m in Sources */,
 				C67B135D1D847DCB000B5B1E /* ORAConversation.m in Sources */,
 				C67B136C1D84ABB5000B5B1E /* ORAAccountViewController.m in Sources */,
 				C67B13631D84827C000B5B1E /* ORARegisterViewController.m in Sources */,
+				C67B13891D86795C000B5B1E /* ORAChatCollectionViewController.m in Sources */,
 				C67B13601D84826A000B5B1E /* ORALoginViewController.m in Sources */,
 				C67B135A1D847DB7000B5B1E /* ORAUser.m in Sources */,
 				C67B132B1D847B2A000B5B1E /* main.m in Sources */,

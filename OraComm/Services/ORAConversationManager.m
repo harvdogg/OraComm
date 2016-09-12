@@ -45,6 +45,11 @@
     return self;
 }
 
+- (NSArray *)allConversations
+{
+    return mConversations.copy;
+}
+
 #pragma mark - Data Processing
 - (void)parseConversations:(NSArray *)conversations
 {
@@ -60,6 +65,9 @@
     }
     
     NSLog(@"Conversations\n%@", mConversations);
+    
+    //Notify of New Notification Data
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ORAConversationsUpdateComplete" object:self];
 }
 
 #pragma mark - Conversation Management
@@ -115,7 +123,8 @@
 
 - (void)createConversationNamed:(NSString *)conversationName
 {
-    
+    [mConversations addObject:[[ORAConversation alloc] initWithName:conversationName]];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"ORAConversationsUpdateComplete" object:self];
 }
 
 @end
